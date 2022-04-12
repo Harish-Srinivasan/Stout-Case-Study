@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Stout Case Study</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+			<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight">
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li style="white-space: nowrap"><a href="index.html">Case Study 1: </a></li>
+					<li style="white-space: nowrap" ><a href="DataPreproc.html">Data Preprocessing</a></li>
+					<li style="white-space: nowrap"><a href="DataVisual.html">Data Visualization</a></li>
+					<li style="white-space: nowrap"><a href="PredInterest.html">Predicting Interest Rate</a></li>
+					<li style="white-space: nowrap"><a href="FutureWork.html">Future Work</a></li>
+					<li style="white-space: nowrap" ><a href="casestudy2.html">Case Study 2: </a></li>
+					<li class="colorlib-active" style="white-space: nowrap" ><a href="results.html">Results & Plots</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<div id="colorlib-main">
+			<section class="ftco-section pt-4 mb-5 ftco-intro">
+				<div class="container-fluid px-3 px-md-0">
+					<div class="row">
+						<div>
+							<h2 class="h4">Results: </h2>
+							<p> The results for the given questions are below: </p>
+								<ul>
+									<li class="colorlib-active">Total revenue for the current year: 31417495</li>
+									<li>New Customer Revenue 2015-2016: <b> 18245491 </b> </li>
+									<li>New Customer Revenue 2016-2017: 28776235 </li>
+									<li>Existing Customer Growth 2015-2016: </li>
+									<img src="images/g2016.png" alt="Loan Dataset 1" style="width:50%">
+									<br>
+									<li>Existing Customer Growth 2016-2017: </li>
+									<img src="images/g2017.png" alt="Loan Dataset 1" style="width:50%">
+									<br>
+									<li>Revenue lost from attrition 2017: 20611</li>
+									<li>Revenue lost from attrition 2016: 20335</li>
+									<li>Existing Customer Revenue Current Year - 2017: 2641259.99</li>
+									<li>Existing Customer Revenue Prior Year - 2016: 2620648.65</li>
+									<li>Total Customers Current Year - 2017: 249987</li>
+									<li>Total Customers Previous Year - 2016: 204646</li>
+									<li>New Customer 2016-2017: 229028</li>
+									<li>New Customer 2015-2016: 145062</li>
+									<li>Lost Customers 2016-2017: 183687</li>
+									<li>Lost Customers 2015-2016: 171710</li>
+								</ul>
+							<p> Let us anlayse the dataset first: </p>
+							<img src="images/Custdf.png" alt="Loan Dataset 1" style="width:60%">
+							<br><br>
+							<img src="images/Custdesc.png" alt="Loan Dataset 1" style="width:60%">
+							<br><br>
+								<ul>
+									<li class="colorlib-active">We observe that there are 3 columns with customer email, net revenue and year</li>
+									<li>There are three years 2015, 2016 and 2017 and associated customer orders and email id</li>
+									<li>Some customers purchase products all three years and their combined order for each year is given as separate data points</li>
+								</ul>
+							<p> Let us anlayse the dataset to see if there are any patterns: </p>
+							<img src="images/Salepie.png" alt="Loan Dataset 1" style="width:60%">
+							<br><br>
+							<p> We plot the total revenues for the three years as a pie chart and see that 2017 has the highest revenue</p>
+							<img src="images/plt1.png" alt="Loan Dataset 1" style="width:60%">
+							<br><br>
+							<p> In this plot, we can see that new customers occupy most of the total customer base and the value seems to grow every year</p>
+							<img src="images/plt3.png" alt="Loan Dataset 1" style="width:60%">
+							<br><br>
+							<p> Accordingly new customers also bring in the most revenue</p>
+							<img src="images/plt2.png" alt="Loan Dataset 1" style="width:60%">
+							<br><br>
+							<p> We plot the existing customer revenue along with the total. This value is considerably lesser</p>
+							<img src="images/plt4.png" alt="Loan Dataset 1" style="width:60%">
+							<br><br>
+							<p> Expanding upon the existing customer revenue, we see that the total revenue from customers who have purchased products for three years consecutively is almost the same</p>
+							<img src="images/plt5.png" alt="Loan Dataset 1" style="width:60%">
+							<br><br>
+							<p> We can also see that the total net revenue of products purchased by customers is also the same every year</p>
+							<img src="images/plt6.png" alt="Loan Dataset 1" style="width:60%">
+							<br><br>
+							<p> We plot the growth over years to see if existing customers purchase more or less products every year</p>
+								<ul>
+									<li class="colorlib-active">We plot the total revenues for the three years as a pie chart and see that 2017 has the highest revenue</li>
+									<li>We have the loaner's employee title, employment period, income, application type and other data points</li>
+									<li>We also have their credit history such as Delinquencies, Inquiries, derogatory public records etc</li>
+									<li>Details on their loan application such as loan purpose, term, interest rate, grade, balance, etc are also available</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div><!-- END COLORLIB-MAIN -->
+	</div><!-- END COLORLIB-PAGE -->
+
+
+
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>

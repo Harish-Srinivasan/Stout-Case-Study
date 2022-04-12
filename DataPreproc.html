@@ -18,11 +18,13 @@
 		<aside id="colorlib-aside" role="complementary" class="js-fullheight">
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li style="white-space: nowrap"><a href="index.html">Case Study 1</a></li>
+					<li style="white-space: nowrap"><a href="index.html">Case Study 1: </a></li>
 					<li class="colorlib-active" style="white-space: nowrap" ><a href="DataPreproc.html">Data Preprocessing</a></li>
 					<li style="white-space: nowrap"><a href="DataVisual.html">Data Visualization</a></li>
 					<li style="white-space: nowrap"><a href="PredInterest.html">Predicting Interest Rate</a></li>
 					<li style="white-space: nowrap"><a href="FutureWork.html">Future Work</a></li>
+					<li style="white-space: nowrap" ><a href="casestudy2.html">Case Study 2: </a></li>
+					<li style="white-space: nowrap" ><a href="results.html">Results & Plots</a></li>
 				</ul>
 			</nav>
 		</aside>
@@ -38,13 +40,36 @@
 							<h2 class="h4">Data Preprocessing: </h2>
 							<p> First, let us see a glimpse of the dataset to understand it better. </p>
 							<img src="images/Loan_df1.png" alt="Loan Dataset 1" style="width:90%">
+							<br><br>
 							<img src="images/Loan_df2.png" alt="Loan Dataset 1" style="width:90%">
+							<br><br>
 								<ul>
 									<li class="colorlib-active">We observe that there are 10,000 data points with 55 columns</li>
 									<li>We have the loaner's employee title, employment period, income, application type and other data points</li>
 									<li>We also have their credit history such as Delinquencies, Inquiries, derogatory public records etc</li>
 									<li>Details on their loan application such as loan purpose, term, interest rate, grade, balance, etc are also available</li>
 								</ul>
+							<p> Next, we can see use describe function to inspect the data </p>
+							<img src="images/des.png" alt="Loan Dataset 1" style="width:90%">
+							<br><br>
+							<p> We check the dataset for null values </p>
+							<img src="images/Loan_df_null.png" alt="Loan Dataset 1" style="width:40%">
+							<br><br>
+								<ul>
+									<li class="colorlib-active"> We observe that these columns have null values in the dataset</li>
+									<li>Upon checking the data description, we see that they are columns which have values if there is a join applicant on the application </li>
+									<li>We also see null values for late fees and delinquencies which may not be applicable to everyone </li>
+									<li> We then fill these values with 0 so that these columns can be used</li>
+								</ul>
+							<p> We check the dataset for types of column values </p>
+							<img src="images/type.png" alt="Loan Dataset 1" style="width:40%">
+							<br><br>
+								<ul>
+									<li class="colorlib-active"> We observe that some columns have object type which means they contain categorical variables</li>
+									<li>To include these data in our task, we need to perform get dummies operation on them </li>
+									<li>We see the processed dataset ready for our model prediction below: </li>
+								</ul>
+							<img src="images/dfproc.png" alt="Loan Dataset 1" style="width:90%">
 						</div>
 					</div>
 				</div>
